@@ -1,0 +1,443 @@
+body{
+	font: 14px/1.5 Arial,Microsoft YaHei,Verdana,sans-serif,Segoe UI,Tahoma
+}
+*{
+	margin: 0;
+	padding: 0
+}
+h1,h2,h3,h4,h5,strong{
+	font-weight: normal;
+}
+
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.font-color-red{
+	color: #f51726
+}
+.font-color-green{
+	color: #13ae50
+}
+.clearfix:after,.clearfix:before{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto
+}
+
+.currency-logo-sprite {
+	display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-image: url(/static/images/coin_logos.png);
+    background-repeat: no-repeat;
+    vertical-align: -3px;
+}
+
+
+.s-s-ltc{
+    background-position: left top;
+}
+.s-s-bcc,.s-s-btc{
+    background-position: -15px top;
+}
+.s-s-eth{
+    background-position: -30px top;
+}
+.s-s-etc{
+    background-position: -45px top;
+}
+.s-s-inf{
+    background-position: -60px top;
+}
+
+.s-s-vash{
+    background-position: -75px top;
+}
+.s-s-xlm{
+    background-position: -90px top;
+}
+.s-s-doge{
+    background-position: -105px top;
+}
+.s-s-bts{
+    background-position: -120px top;
+}
+.s-s-bcc{
+    background-position: -135px top;
+}
+
+.s-s-mgc{
+    background-position: left -15px;
+}
+.s-s-zcc{
+    background-position: -15px -15px;
+}
+.s-s-ardr{
+    background-position: -30px -15px;
+}
+.s-s-nxt{
+    background-position: -45px -15px;
+}
+.s-s-xem{
+    background-position: -60px -15px;
+}
+.s-s-xrp{
+    background-position: -75px -15px;
+}
+.s-s-tmc{
+    background-position: -90px -15px;
+}
+.s-s-dash{
+    background-position: -105px -15px;
+}
+
+/*2017/11/01新增*/
+.s-s-ncs{
+    background-position: -120px -15px;
+}
+
+.s-s-xpm{
+    background-position: -135px -15px;
+}
+
+
+.s-s-sys{
+    background-position: left -30px;
+}
+.s-s-wdc{
+    background-position: -15px -30px;
+}
+.s-s-mec{
+    background-position: -30px -30px;
+}
+.s-s-xzc{
+    background-position: -45px -30px;
+}
+.s-s-ric{
+    background-position: -60px -30px;
+}
+.s-s-qrk{
+    background-position: -75px -30px;
+}
+.s-s-xcn{
+    background-position: -90px -30px;
+}
+.s-s-emc{
+    background-position: -105px -30px;
+}
+.s-s-tag{
+    background-position: -120px -30px;
+}
+.s-s-hlb{
+    background-position: -135px -30px;
+}
+
+.s-s-blk{
+    background-position: left -45px;
+}
+.s-s-ppc{
+    background-position: -15px -45px;
+}
+.s-s-eac{
+    background-position: -30px -45px;
+}
+
+/*
+
+*2017/11115
+*增加bitusd、bitcny
+*/ 
+.s-s-nss{
+    background-position: -45px -45px;
+}
+.s-s-bitusd{
+    background-position: -60px -45px;
+}
+.s-s-cny{
+    background-position: -75px -45px;
+}
+.s-s-ybc{
+    background-position: -90px -45px;
+}
+.s-s-omg{
+    background-position: -120px -45px;
+}
+.s-s-snt{
+    background-position: -135px -45px;
+}
+.s-s-bcd{
+    background-position: -105px -45px;
+}
+/*
+
+*2017/11115
+*增加bcd
+*/
+
+.s-s-xyt {
+    background-position: 0 -60px;
+}
+
+.s-s-atn{
+    background-position: -15px -60px
+}
+
+.s-s-dat{
+    background-position: -30px -60px
+}
+
+.s-s-sbtc{
+    background-position: -45px -60px
+}
+
+.s-s-bcx{
+    background-position: -60px -60px
+}
+.s-s-qash{
+    background-position: -75px -60px
+}
+.s-s-lend{
+    background-position: -90px -60px
+}
+.s-s-ae{
+    background-position: -105px -60px
+}
+.s-s-cvc{
+    background-position: -120px -60px
+}
+.s-s-bnt{
+    background-position: -135px -60px
+}
+.s-s-knc{
+    background-position: 0px -75px
+}
+.s-s-lbtc{
+    background-position: -15px -75px
+}
+.s-s-bite{
+    background-position: -30px -75px
+}
+
+a{
+	color: #0ab2d2;
+	text-decoration: none;
+	&:hover{
+		color: #0ab2d2;
+		text-decoration: none;
+	}
+}
+
+
+
+
+.components-pricelist{
+	width: 100%;
+	margin: 0 auto;
+	.nav-wrap{
+		width: 100%;
+	    border-bottom: 2px solid #0ab2d2;
+	    height: 40px;
+	    background-color: rgba(39,39,39,1);
+	}
+	.area-nav{
+		
+		a{
+			display: inline-block;
+			position: relative;
+			line-height: 40px;
+			margin-right: 80px;
+			color: #0ab2d2;
+			text-decoration: none;
+			&.active:after{
+				display: block;
+				position: absolute;
+				content: " ";
+				width: 0;
+				height: 0;
+				bottom: 0;
+				left: 50%;
+				margin-left: -6px;
+				border-color: transparent transparent #0ab2d2 transparent;
+				border-style: solid;
+				border-width: 0 6px 8px 6px;
+
+			}
+		}
+	}
+
+	.sub-nav-wrap{
+		width: 100%;
+		background-color: #eee;
+	}
+	.sub-nav{
+	    height: 40px;
+	    line-height: 40px;
+	    color: #666;
+		font-weight: bold;
+	    
+	    overflow: hidden;
+		@at-root li{
+			list-style:none;
+			float: left;
+			&.active{
+				color: #0ab2d2
+			}
+		}
+		.col-1{
+			text-indent: 20px;
+		}
+		em{
+			position: relative;
+		}
+		i{
+			position: absolute;
+			font-size: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			left: 5px;
+			&.up{
+				top: 1px;
+				border-width: 0 5px 5px 5px;
+				border-color: transparent transparent #999 transparent
+			}
+			&.down{
+				bottom: 1px;
+				border-width: 5px 5px 0 5px;
+				border-color: #999 transparent transparent transparent
+			}
+			&.up-active{
+				border-bottom-color: #0ab2d2
+			}
+			&.down-active{
+				border-top-color: #0ab2d2
+			}
+		}
+	}
+
+	.col{
+		@at-root #{&}-1{
+			width: 145px;
+		}
+		@at-root #{&}-2{
+			width: 205px;
+		}
+		@at-root #{&}-3{
+			width: 155px;
+			cursor: pointer;
+		}
+		@at-root #{&}-4{
+			width: 185px;
+		}
+		@at-root #{&}-5{
+			width: 190px;
+		}
+		@at-root #{&}-6{
+			width: 200px;
+			cursor: pointer;
+			i{
+				left: -3px;
+			}
+		}
+	}
+
+	.coin-list{
+		ul{
+			overflow: hidden;
+		}
+		li{
+			color: #333;
+			line-height: 38px;
+			border-bottom: 1px solid #f0f0f0;
+			cursor: pointer;
+			&:hover{
+				background-color: rgb(249,251,253);
+			}
+			&.over{
+				cursor: default;
+				span{
+					color: #999;
+				}
+				.col-1{
+					color: #333
+				}
+				.col-2{
+					font-weight: normal;
+				}
+
+				a{
+					color: #bebebe;
+					border-color: #bebebe;
+					i{
+						border-color:transparent transparent transparent #999
+					}
+					&:hover{
+						background-color: #bebebe
+					}
+				}
+			}
+			span{
+				display: inline-block;
+				&.col-2{
+					font-weight: bold;
+				}
+				&.exchange-price{
+					color: #666;
+					font-weight: normal;
+					display: none;
+				}
+			}
+			strong{
+				color: #999;
+			}
+			a{
+				display: block;
+				width: 86px;
+				height: 24px;
+				border: 1px solid #0ab2d2;
+				line-height: 24px;
+				text-align: center;
+				border-radius: 3px;
+				i{
+					display: inline-block;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 5px 0 5px 8px;
+					border-color: transparent transparent transparent #0ab2d2
+				}
+
+				&:hover{
+					background-color: #0ab2d2;
+					color: #fff;
+					i{
+						border-color: transparent transparent transparent #fff
+					}
+				}
+			}
+		}
+	}
+
+	.waitting-trade{
+		width: 90px;
+		margin: 80px auto;
+		background: url(/static/images/witting.png) left top no-repeat;
+		p{
+			font-size: 16px;
+		    color: #a9a9a9;
+		    padding-top: 90px;
+		    text-align: center;
+		    height: 20px;
+		}
+	}
+}
